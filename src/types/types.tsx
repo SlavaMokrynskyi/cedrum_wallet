@@ -1,4 +1,4 @@
-export type MyButtonProps = {
+type MyButtonProps = {
 
   children: React.ReactNode;
   className: string; 

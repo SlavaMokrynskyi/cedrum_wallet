@@ -1,0 +1,216 @@
+.main {
+  width: 360px;
+  height: 600px;
+  background-color: rgba(3, 10, 65, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; 
+}
+.title {
+  font-size: 15px;
+  color: white;
+  margin-top: 30px;
+  font-weight: 400;
+}
+.select_amount {
+  width: 360px;
+  top: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  font-size: 16px;
+}
+.point_down {
+  top: -18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border-radius: 20px;
+}
+.point_down_icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.rect {
+  top: 150px;
+  width: 360px;
+  height: 850px;
+  background-color: rgba(4, 12, 96, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border-radius: 20px;
+}
+.square {
+  width: 26px;
+  height: 26px;
+  top: -273px;
+  background-color: rgba(5, 14, 142, 1);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 5px;
+}
+.tocken_name_1 {
+  min-width: 40px;
+  height: auto;
+  top: 125px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  position: absolute;
+  right: 15px;
+  border-radius: 20px;
+  border: 2px solid #807e7e;
+  box-sizing: border-box;
+  padding: 4px 12px;
+  font-size: 15px;
+}
+.tocken_name_2 {
+  min-width: 40px;
+  height: auto;
+  top: 242px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  position: absolute;
+  right: 15px;
+  border-radius: 20px;
+  border: 2px solid #807e7e;
+  box-sizing: border-box;
+  padding: 4px 12px;
+  font-size: 15px;
+}
+.tocken_balance_1 {
+  font-size: 11px;
+  color: #bdbdbdc0;
+  font-weight: 300;
+  line-height: 1.1;
+  position: absolute;
+  top: 165px;
+  margin-left: 270px;
+}
+.tocken_balance_2 {
+  font-size: 11px;
+  color: #bdbdbdc0;
+  font-weight: 300;
+  line-height: 1.1;
+  position: absolute;
+  top: 280px;
+  margin-left: 270px;
+}
+.number_input_1 {
+  width: 150px;
+  height: 50px;
+  top: -388px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  border-radius: 5px;
+  margin-left: -135px;
+  color: #bdbdbdc0;
+  font-weight: 300;
+  background-color: rgba(3, 10, 65, 1);
+  border: none;
+}
+.number_input_2 {
+  width: 150px;
+  height: 50px;
+  top: -323px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  border-radius: 5px;
+  margin-left: -135px;
+  background-color: rgba(4, 12, 96, 1);
+  border: none;
+}
+.back_button {
+  position: absolute;
+  top: 24px;
+  left: 30px;
+  border-radius: 15px;
+  margin-left: -10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+.back_button:hover {
+  transform: scale(1.07);
+}
+.back_button_icon {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+.settings {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+.settings:hover {
+  transform: scale(1.07);
+}
+.settings_icon {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+.bridge_to_button {
+  position: absolute;
+  top: 235px;
+  right: 15px;
+  width: 120px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0d1be0;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background 0.2s, transform 0.15s;
+  font-size: 15px;
+  font-weight: 400;
+}
+.bridge_to_button:hover {
+  background: #1221f7;
+  transform: scale(1.07);
+}

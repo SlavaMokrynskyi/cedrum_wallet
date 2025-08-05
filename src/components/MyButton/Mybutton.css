@@ -1,0 +1,14 @@
+.unlock_button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 45px;
+  position: absolute;
+  top: 420px;
+  left: 30px;
+  border-radius: 15px;
+  background-color: rgba(13, 27, 224, 1);
+  size:15px;
+  border-color: rgba(13, 27, 224, 1);
+}

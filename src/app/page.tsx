@@ -1,9 +1,8 @@
- 
 
 import { useRouter } from 'next/navigation'; 
 import styles from './page.module.css';
 import React from 'react';
-import MyButton from '../components/unlock_button'; 
+import MyButton from '../components/MyButton/MyButton'; 
 
 export default function Home() {
   
@@ -15,10 +14,10 @@ export default function Home() {
         <img src="/logo.png" className={styles.logo} /> 
       </div>
       <div className={styles.password}>
-        Пароль
+        Password
       </div>
       <div>
-        <input type="password" placeholder="Введіть пароль" className={styles.password_input} />
+        <input type="password" placeholder="Keep a password" className={styles.password_input} />
       </div>
       <div className={styles.rect}>
         <div className={styles.cedra}>Cedra</div>
@@ -31,23 +30,20 @@ export default function Home() {
       </div>
 
       <div>
-        <MyButton
-          className={styles.unlock_button} 
-        >
-          Розблокувати
+        <MyButton className={styles.unlock_button} href={'/main'}>
+          Unlock
         </MyButton> 
       </div>
 
       <div>
         <button
-          className={styles.forget_button}
-        >
-          Забули пароль?
+          className={styles.forget_button}>
+          Forgot password
         </button>
       </div>
 
       <div>
-        <h1 className={styles.help}>Потрібна допомога?</h1>
+        <h1 className={styles.help}>Need help?</h1>
       </div>
     </main>
   );

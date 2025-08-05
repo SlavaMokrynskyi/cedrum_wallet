@@ -157,8 +157,8 @@
   cursor: pointer;
   transition: transform 0.15s;
 }
-.back_button:hover {
-  transform: scale(1.07);
+.back_button:active {
+  transform: scale(0.95);
 }
 .back_button_icon {
   width: 40px;
@@ -182,8 +182,8 @@
   cursor: pointer;
   transition: transform 0.15s;
 }
-.settings:hover {
-  transform: scale(1.07);
+.settings:active {
+  transform: scale(0.95);
 }
 .settings_icon {
   width: 40px;

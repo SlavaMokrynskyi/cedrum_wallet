@@ -182,7 +182,7 @@
   cursor: pointer;
   transition: transform 0.15s;
 }
-.settings:hover {
+.settings:active {
   transform: scale(1.07);
 }
 .settings_icon {
@@ -210,7 +210,6 @@
   font-size: 15px;
   font-weight: 400;
 }
-.bridge_to_button:hover {
-  background: #1221f7;
-  transform: scale(1.07);
+.bridge_to_button:active {
+  transform: scale(0.95);
 }

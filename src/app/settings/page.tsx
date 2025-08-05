@@ -19,7 +19,7 @@ export default function Page() {
         <hr className={styles.line} />
       </div>
       <div>
-        <MyButton className={styles.back_button} href=''>
+        <MyButton className={styles.back_button} href='/main'>
           <img src='/back.png' alt='icon' className={styles.icon_back_to_menu}/>
           
         </MyButton>
@@ -30,11 +30,11 @@ export default function Page() {
       
         <div className={styles.input_wrapper}>
           <img src="/serch.png" alt="icon" className={styles.input_image} />
-          <input type="text" placeholder="Search" className={styles.serch} />
+          <input type="text" placeholder="Search" className={styles.search} />
         </div>
 
         <div>
-            <MyButton className={styles.global_button} href=''>
+            <MyButton className={styles.global_button} href='/general-settings'>
               <img src="/settings.png" alt="icon" className={styles.icon_setting} />
               <p className={styles.setting_button_title}>General</p>
               <img src="/back_button_reversed.png" alt="icon" className={styles.icon_back} />

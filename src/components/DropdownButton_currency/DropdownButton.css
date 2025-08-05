@@ -1,0 +1,45 @@
+.currency-selector {
+  position: relative;
+  width: 300px;
+  margin-top: 20px;
+}
+
+.selector-button {
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #030a41;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 9999px;
+  font-size: 16px;
+  text-align: left;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.arrow {
+  position: absolute;
+  right: 16px;
+}
+
+.dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  width: 100%;
+  background-color: #030a41;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.dropdown-item {
+  padding: 10px 16px;
+  cursor: pointer;
+  color: white;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(3, 10, 65, 1);
+}

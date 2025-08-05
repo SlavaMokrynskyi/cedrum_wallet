@@ -69,9 +69,8 @@
   margin: 0;
   padding: 0;
 }
-.cancel_button:hover {
-  border-color: #313a5c;
-  color: #bdbdbd;
+.cancel_button:active {
+  transform: scale(0.95);
 }
 .continue_button {
   width: 150px;
@@ -89,9 +88,8 @@
   margin: 0;
   padding: 0;
 }
-.continue_button:hover {
-  background: #1221f7;
-  transform: scale(1.07);
+.continue_button:active {
+  transform: scale(0.95);
 }
 .back_button {
   position: absolute;
@@ -107,8 +105,8 @@
   cursor: pointer;
   transition: transform 0.15s;
 }
-.back_button:hover {
-  transform: scale(1.07);
+.back_button:active {
+  transform: scale(0.95);
 }
 .back_button_icon {
   width: 40px;

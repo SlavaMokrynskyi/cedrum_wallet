@@ -3,8 +3,7 @@ export type MyButtonProps = {
   children: React.ReactNode;
   className: string; 
 };
-export type UserMenuProps = {
-  options: DropdownProps[];
-  selected: string;
-  onSelect: (value: string) => void;
+export interface CurrencyOption {
+  code: string;
+  name: string;
 }

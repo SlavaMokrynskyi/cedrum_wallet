@@ -36,10 +36,9 @@ export default function Home() {
       </div>
 
       <div>
-        <button
-          className={styles.forget_button}>
+        <MyButton className={styles.forget_button} href={'/main'}>
           Forgot password
-        </button>
+        </MyButton>
       </div>
 
       <div>

@@ -20,6 +20,7 @@
 }
 
 .arrow {
+  
   position: absolute;
   right: 20px;
   top: 50%;
@@ -28,6 +29,7 @@
 }
 
 .dropdown-menu {
+  margin-left: 5%;
   position: absolute;
   top: calc(100% + 4px);
   width: 100%;
@@ -39,6 +41,7 @@
 }
 
 .dropdown-item {
+  margin-left: 10%;
   padding: 12px 20px;
   cursor: pointer;
   color: #fff;

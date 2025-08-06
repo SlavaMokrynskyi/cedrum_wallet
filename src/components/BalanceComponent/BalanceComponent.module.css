@@ -1,0 +1,51 @@
+.wrapper {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  transform: translate(-30%, -30%); 
+}
+
+
+.container {  
+  max-width: 500px;
+  margin-left: 0 ;
+
+  font-family: Arial, sans-serif;
+  background-color: rgba(3, 10, 65, 1);
+
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.balanceRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.amount {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+}
+
+.button {
+
+  background-color: rgba(3, 10, 65, 1);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.eye{
+  width: 20px;
+  height: 20px;
+}
+.button:hover {
+  background-color: rgba(5, 14, 142, 0.4);
+}

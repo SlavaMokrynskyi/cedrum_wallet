@@ -19,7 +19,7 @@ export default function Page() {
         <hr className={styles.line} />
       </div>
       <div>
-        <MyButton className={styles.back_button} href='/main'>
+        <MyButton className={styles.back_button} href='/home'>
           <img src='/back.png' alt='icon' className={styles.icon_back_to_menu}/>
           
         </MyButton>

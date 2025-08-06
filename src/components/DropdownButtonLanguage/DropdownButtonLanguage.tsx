@@ -1,14 +1,14 @@
 'use client';
 import React, { useState } from 'react';
 import { LanguageOption } from '@/types/types';
-import './DropduwnButton_language.css'; // або './DropdownButton_language.css' якщо там була помилка
+import './DropduwnButton_language.css'; 
 
 const languageOptions: LanguageOption[] = [
   { code: 'UA', name: 'Українська мова' },
   { code: 'EN', name: 'English' },
 ];
 
-export default function DropdownButton_language() {
+export default function DropdownButtonLanguage() {
   const [isOpen, setIsOpen] = useState(false);
   const [selected, setSelected] = useState<LanguageOption>(languageOptions[0]);
 

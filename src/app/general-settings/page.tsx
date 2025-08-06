@@ -2,7 +2,8 @@ import React from 'react';
 import styles from './page.module.css';
 import MyButton from '@/components/MyButton/MyButton';
 import DropdownButton from '@/components/DropdownButton_currency/DropdownButton';
-import DropdownButton_language from '@/components/DropdownButton_language/DropduwnButton_language';
+import DropdownButtonLanguage from '@/components/DropdownButtonLanguage/DropdownButtonLanguage';
+import ToggleSwitch from '@/components/SwitchButton/SwitchButton';
 
 export default function Page() {
   return (
@@ -31,12 +32,22 @@ export default function Page() {
         <div className={styles.dropdownButton_div}>
           <DropdownButton />
         </div>
+        
+        <div >
+          <p className={styles.native_token_title}>Show native token  as main balance</p>
+        <div className={styles.switch_button}>
+          <ToggleSwitch/>
+        </div>
+        </div>
         <div>
-            <p className={styles.language_title}>Current language</p>
+          <p className={styles.language_title}>Current language</p>
         </div>
+
         <div className={styles.dropdownButton_div}>
-          <DropdownButton_language />
+          <DropdownButtonLanguage />
         </div>
+
+        
       </div>
     </main>
   );

@@ -97,9 +97,22 @@
   font-weight: 500;
   color: white;
 }
+.native_token_title{
+  margin-top: 10%;
+  margin-left: 5%;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  position: absolute ;
+  
+}
+.switch_button{
+  margin-top: 8%;
+  margin-left: 75%;
+}
 .language_title{
-  margin-top: 5%;
-  margin-top: 3%;
+  
+  margin-top: 10%;
   margin-left: 5%;
   font-size: 14px;
   font-weight: 500;

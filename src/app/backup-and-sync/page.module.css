@@ -51,28 +51,6 @@
   width: 25px;
   height: 25px;
 }
-
-.title_general {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  margin: 0;
-  font-size: 14px;
-  font-weight: 500;
-  color: white;
-  white-space: nowrap; 
-  z-index: 2;
-}
-.back_button:active {
-  transform: scale(0.95);
-}
-
-.title_general {
-  margin: 0;                 
-  font-size: 14px;
-  font-weight: 500;
-  color: white;
-}
 .input_wrapper {
   align-self: center;
   position: relative;
@@ -99,32 +77,4 @@
   width: 16px;
   height: 16px;
   pointer-events: none;
-}
-.title_exchange{
-  margin-top: 3%;
-  margin-left: 5%;
-  font-size: 14px;
-  font-weight: 500;
-  color: white;
-}
-.native_token_title{
-  margin-top: 10%;
-  margin-left: 5%;
-  font-size: 14px;
-  font-weight: 500;
-  color: white;
-  position: absolute ;
-  
-}
-.switch_button{
-  margin-top: 8%;
-  margin-left: 75%;
-}
-.language_title{
-  
-  margin-top: 10%;
-  margin-left: 5%;
-  font-size: 14px;
-  font-weight: 500;
-  color: white;
 }

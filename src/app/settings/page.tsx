@@ -7,14 +7,12 @@ export default function Page() {
   return (
     <main>
       <div className={styles.body}>
-       <div>
-        
-       </div>
-      <div>
-        <MyButton className={styles.menu_button} href=''>
-        <img src='/menu.png' alt='icon' className={styles.icon_menu}/>
-        </MyButton>
-      </div>
+
+        <div className={styles.menu_div}>
+          <MyButton className={styles.menu} href='/settings'>
+            <img src='/menu.png' alt='icon' className={styles.menu_icon}/>
+          </MyButton>
+        </div>
         <div className={styles.line_div}>
         <hr className={styles.line} />
       </div>
@@ -53,7 +51,7 @@ export default function Page() {
 
       </div>
       <div>
-          <MyButton className={styles.global_button} href=''>
+          <MyButton className={styles.global_button} href='/backup-and-sync'>
             <div className={styles.button_extensions_div}>
               <img src='/backup_and_sync.png' alt='icon' className={styles.extensions_icon}/>
               <p className={styles.setting_button_title}>Backup and sync</p>

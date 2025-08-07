@@ -23,6 +23,18 @@
   left: 0%;
   top: 12%
 }
+.menu_div{
+  position: absolute;
+  right: 10%;
+  top: 4%;
+}
+.menu{
+
+}
+.menu_icon{
+  width: 30px;
+  height: 30px;
+}
 .balance{
     position: absolute;
     top:50%

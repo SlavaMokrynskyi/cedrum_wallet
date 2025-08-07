@@ -5,10 +5,16 @@ import DropdownButton from '@/components/DropdownButton_currency/DropdownButton'
 import DropdownButtonLanguage from '@/components/DropdownButtonLanguage/DropdownButtonLanguage';
 import ToggleSwitch from '@/components/SwitchButton/SwitchButton';
 
+
 export default function Page() {
   return (
     <main>
       <div className={styles.body}>
+        <div className={styles.menu_div}>
+          <MyButton className={styles.menu} href='/settings'>
+            <img src='/menu.png' alt='icon' className={styles.menu_icon}/>
+          </MyButton>
+        </div>
         <div className={styles.line_div}>
           <hr className={styles.line} />
         </div>

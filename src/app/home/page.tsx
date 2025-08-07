@@ -9,6 +9,11 @@ export default function page() {
     <div>
       <main>
         <div className={styles.body}>
+        <div className={styles.menu_div}>
+          <MyButton className={styles.menu} href='/settings'>
+            <img src='/menu.png' alt='icon' className={styles.menu_icon}/>
+          </MyButton>
+        </div>
           <div className={styles.line_div}>
           <hr className={styles.line} />
         </div>
@@ -35,9 +40,9 @@ export default function page() {
           </MyButton>
         </div>
         <div className={styles.send_div}>
-          <MyButton className={styles.swap} href='/send-page'>
+          <MyButton className={styles.swap} href='/'>
           <img src='/recieve.png' className={styles.button_icon}/>
-          <p className={styles.button_title}>Send</p>
+          <p className={styles.button_title}>QR</p>
           </MyButton>
         </div>
         

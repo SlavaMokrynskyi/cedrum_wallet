@@ -1,5 +1,3 @@
-
-import { useRouter } from 'next/navigation'; 
 import styles from './page.module.css';
 import React from 'react';
 import MyButton from '../components/MyButton/MyButton'; 
@@ -30,7 +28,7 @@ export default function Home() {
       </div>
 
       <div>
-        <MyButton className={styles.unlock_button} href={'/main'}>
+        <MyButton className={styles.unlock_button} href={'/home'}>
           Unlock
         </MyButton> 
       </div>

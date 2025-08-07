@@ -41,6 +41,18 @@
   height: 25px; 
 }
 
+.title_general {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  white-space: nowrap; 
+  z-index: 2;
+}
+
 .back_button {
   margin-right: 10px;
   flex-shrink: 0;
@@ -77,4 +89,17 @@
   width: 16px;
   height: 16px;
   pointer-events: none;
+}
+.native_token_title{
+  margin-top: 10%;
+  margin-left: 5%;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  position: absolute ;
+  
+}
+.switch_button{
+  margin-top: 8%;
+  margin-left: 75%;
 }

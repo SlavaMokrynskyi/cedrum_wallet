@@ -1,7 +1,9 @@
 import React from 'react'
 import styles from './page.module.css';
-
 import MyButton from '@/components/MyButton/MyButton'
+import BackupSwitch from '@/components/SwichButtonBackup/SwitchButton';
+
+
 export default function page() {
   return (
     <main>
@@ -19,12 +21,18 @@ export default function page() {
           <MyButton className={styles.back_button} href='/settings'>
             <img src='./back_button.png' className={styles.back_button_icon} />
           </MyButton>
-          <h1 className={styles.title_general}>General</h1>
+          <h1 className={styles.title_general}>Backup and sync</h1>
         </div>
-
+        
         <div className={styles.input_wrapper}>
           <img src="/serch.png" alt="icon" className={styles.input_image} />
           <input type="text" placeholder="Search" className={styles.search} />
+        </div>
+        <div >
+          <p className={styles.native_token_title}>Turn on backup and sync</p>
+        <div className={styles.switch_button}>
+          <BackupSwitch/>
+        </div>
         </div>
         </div>
     </main>

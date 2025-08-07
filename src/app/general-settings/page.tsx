@@ -3,7 +3,7 @@ import styles from './page.module.css';
 import MyButton from '@/components/MyButton/MyButton';
 import DropdownButton from '@/components/DropdownButton_currency/DropdownButton';
 import DropdownButtonLanguage from '@/components/DropdownButtonLanguage/DropdownButtonLanguage';
-import ToggleSwitch from '@/components/SwitchButton/SwitchButton';
+import ToggleSwitch from '@/components/SwitchButtonToken/SwitchButton';
 
 
 export default function Page() {

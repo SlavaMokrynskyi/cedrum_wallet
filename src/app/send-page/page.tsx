@@ -1,11 +1,7 @@
 import { useRouter } from 'next/navigation'; 
 import styles from './send.module.css';
-import React from 'react'
-
-interface ButtonProps {
-  onClick: () => void;
-  Button: React.ReactNode;
-}
+import React from 'react';
+import MyButton from '@/components/MyButton/MyButton';
 
 export default function Home() {
   return (
@@ -22,16 +18,16 @@ export default function Home() {
       <div>
           <input className={styles.address_input} placeholder='Enter public address' />
         </div>
-        <button className={styles.back_button}>
-          <img src="/back_button.png" className={styles.back_button_icon} />
-        </button>
-        <div className={styles.buttons}>
-            <button className={styles.cancel_button}>
-                Cancel
-            </button>
-            <button className={styles.continue_button}>
-                Continue
-            </button>
+        <MyButton className={styles.back_button} href="/home">
+        <img src="/back_button.png" className={styles.back_button_icon} />
+      </MyButton>
+      <div className={styles.buttons}>
+        <MyButton className={styles.cancel_button} href="/home">
+          Cancel
+        </MyButton>
+        <MyButton className={styles.continue_button} href="/confirm">
+          Continue
+        </MyButton>
         </div>
     </main>
   );

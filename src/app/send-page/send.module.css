@@ -68,6 +68,9 @@
   transition: border-color 0.15s, color 0.15s;
   margin: 0;
   padding: 0;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
 }
 .cancel_button:active {
   transform: scale(0.95);
@@ -87,6 +90,9 @@
   transition: background 0.15s, transform 0.15s;
   margin: 0;
   padding: 0;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
 }
 .continue_button:active {
   transform: scale(0.95);

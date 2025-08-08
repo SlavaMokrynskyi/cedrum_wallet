@@ -28,14 +28,6 @@ export default function Home() {
         <MyButton className={styles.continue_button} href="/confirm">
           Continue
         </MyButton>
-      </div>
-        <div className={styles.buttons}>
-            <button className={styles.cancel_button}>
-                Cancel
-            </button>
-            <button className={styles.continue_button}>
-                Continue
-            </button>
         </div>
     </main>
   );

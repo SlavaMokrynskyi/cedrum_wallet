@@ -7,10 +7,34 @@
   align-items: center;
   position: relative;
 }
+
+
+
+
+.back_button_icon {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.title_general {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  white-space: nowrap; 
+  z-index: 2;
+}
+.back_button:active {
+  transform: scale(0.95);
+}
 .back_button{
   position: absolute;
-  top:15%;
-  left: 88%;
+  top:5%;
+  left: 5%;
 }
 .icon_back_to_menu{
   width: 50px;
@@ -23,10 +47,11 @@
   margin-top: 20px;
 }
 .title {
-  margin-top: 50px;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 15px;
   color: white;
+  margin-top: 30px;
+  font-weight: 500;
+
 }
 .qr_code_container {
   display: flex;
@@ -40,3 +65,14 @@
   height: 200px;
   border-radius: 15px;
 }
+
+.address_text{
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  top: 70%;
+  right: 42%;
+  font-weight: 800;  
+
+}
+

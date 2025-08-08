@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './page.module.css';
 import MyButton from '@/components/MyButton/MyButton'
-import BackupSwitch from '@/components/SwichButtonBackup/SwitchButton';
+import BackupSwitch from '@/components/SwichButtonBackup/SwichButton';
 
 
 export default function page() {

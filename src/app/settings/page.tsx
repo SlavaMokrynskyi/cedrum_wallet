@@ -41,7 +41,7 @@ export default function Page() {
         </div>
 
         <div>
-        <MyButton className={styles.global_button} href=''>
+        <MyButton className={styles.global_button} href='/will-be-yet'>
             <div className={styles.button_extensions_div}>
               <img src="/extensions.png" alt="icon" className={styles.extensions_icon} />
               <p className={styles.setting_button_title}>Extended</p>
@@ -60,7 +60,7 @@ export default function Page() {
           </MyButton>
       </div>
       <div>
-        <MyButton className={styles.global_button} href=''>
+        <MyButton className={styles.global_button} href='/will-be-yet'>
           <div className={styles.button_extensions_div}>
             <img src='/contacks.png' alt='icon'className={styles.extensions_icon}/>
             <p className={styles.setting_button_title}>Contacts</p>
@@ -69,7 +69,7 @@ export default function Page() {
         </MyButton>
       </div>
       <div>
-        <MyButton className={styles.global_button} href=''>
+        <MyButton className={styles.global_button} href='/will-be-yet'>
           <div className={styles.button_extensions_div}>
             <img  src='/notifications.png' alt='icons' className={styles.extensions_icon}/>
             <p className={styles.setting_button_title}>Notifications</p>
@@ -78,7 +78,7 @@ export default function Page() {
         </MyButton>
       </div>
       <div>
-        <MyButton className={styles.global_button} href=''>
+        <MyButton className={styles.global_button} href='/will-be-yet'>
           <div className={styles.button_extensions_div}>
             <img src='/security.png' alt='icon' className={styles.extensions_icon}/>
             <p className={styles.setting_button_title}>Security and privacy</p>

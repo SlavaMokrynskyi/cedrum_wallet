@@ -1,6 +1,7 @@
 import { useRouter } from 'next/navigation'; 
 import styles from './swap.module.css';
 import React from 'react'
+import MyButton from '@/components/MyButton/MyButton';
 
 interface ButtonProps {
   onClick: () => void;
@@ -13,12 +14,11 @@ export default function Home() {
       <div className={styles.header}>
         <h1 className={styles.title}>Swap</h1>
       </div>
-      <button className={styles.settings} > 
-          <img src="/settings.png" className={styles.settings_icon} />
-        </button>
-        <button className={styles.back_button}>
-          <img src="/back_button.png" className={styles.back_button_icon} />
-        </button>
+             <div>
+        <MyButton className={styles.back_button} href='/home'>
+            <img src='./back_button.png' className={styles.back_button_icon} />
+          </MyButton>
+      </div>
       <div className={styles.rect}>
       </div>
       <div className={styles.square}>

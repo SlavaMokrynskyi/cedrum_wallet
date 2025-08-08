@@ -40,7 +40,7 @@ export default function page() {
           </MyButton>
         </div>
         <div className={styles.send_div}>
-          <MyButton className={styles.swap} href='/'>
+          <MyButton className={styles.swap} href='/receive'>
           <img src='/recieve.png' className={styles.button_icon}/>
           <p className={styles.button_title}>QR</p>
           </MyButton>

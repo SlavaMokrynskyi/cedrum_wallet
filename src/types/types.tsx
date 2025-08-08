@@ -16,3 +16,6 @@ export type Balance = {
   amount: number;
   currency: string;
 };
+export interface InputWithStateProps {
+  placeholder?: string;
+}

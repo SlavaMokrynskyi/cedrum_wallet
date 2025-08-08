@@ -14,7 +14,7 @@ export default function page() {
                 <p className={styles.title}>Let`s roll!</p>
             </div>
             <div>
-                <MyButton className={styles.create_button} href={'/home'}>
+                <MyButton className={styles.create_button} href={'/create-password'}>
                     Create a new wallet
                 </MyButton> 
             </div>

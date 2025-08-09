@@ -28,13 +28,13 @@ export default function page() {
             <p className={styles.title_way}>It's the only way to recover your wallet if you get <br/> locked out of the app or get a new device.</p>
         </div>
         <div  className={styles.started_button_div}>
-          <MyButton className={styles.started_button} href='secure-your-wallet'>
+          <MyButton className={styles.started_button} href='save-recovery-phrase'>
             <p className={styles.button_title}> Get started </p>
           </MyButton>
         </div>
          <div className={styles.later_button_div}>
-          <MyButton className={styles.later_button} href='secure-your-wallet'>
-            <p >Create password </p>
+          <MyButton className={styles.later_button} href='/'>
+            <p >Reming me later </p>
           </MyButton>
         </div>
         </div>

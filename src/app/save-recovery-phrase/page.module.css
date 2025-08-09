@@ -1,0 +1,33 @@
+.body {
+  width: 360px;
+  height: 600px;
+  background-color: rgba(3, 10, 65, 1);
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+}
+.back_div{
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.back_button {
+  margin-right: 10px;
+  flex-shrink: 0;
+  z-index: 1; 
+}
+
+.back_button_icon {
+  width: 25px;
+  height: 25px;
+}
+
+.title_step{
+    color:rgb(137, 134, 151);
+    font-weight: 400;
+    size:12px;
+}
+.title_div{
+    margin-top: 5%;
+    margin-left: 4%;
+}

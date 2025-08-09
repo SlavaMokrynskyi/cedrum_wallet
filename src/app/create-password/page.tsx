@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './page.module.css';
 import MyButton from '@/components/MyButton/MyButton';
 import InputWithState from '@/components/InputWithState/InputWithState';
-
+import CheckButton from '@/components/CheckButton/CheckButton';
 
 export default function page() {
   return (
@@ -27,6 +27,25 @@ export default function page() {
         </div>
         <div className={styles.input_div}>
               <InputWithState placeholder="Password"  />
+        </div>
+        <div className={styles.title_password_div2}>
+          <p className={styles.title_password}>Confirm password</p>
+        </div>
+        <div className={styles.input_div}>
+              <InputWithState placeholder="Password"  />
+        </div>
+        <div className={styles.check_div}>
+          <div className={styles.check_button_div}>
+            <CheckButton/>
+          </div >
+          <div className={styles.title_forget_div}>
+            <p className={styles.title_forget}>If I forget this password, I'll lose access to my <br/>wallet permanently. Cedrum can't reset it for <br/> me.</p>
+          </div>
+        </div>
+        <div>
+          <MyButton className={styles.create_button} href='secure-your-wallet'>
+            <p>Create password </p>
+          </MyButton>
         </div>
     </div>
     </main>

@@ -19,3 +19,4 @@ export type Balance = {
 export interface InputWithStateProps {
   placeholder?: string;
 }
+export type CheckButtonProps = {};

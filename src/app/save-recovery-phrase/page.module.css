@@ -31,3 +31,36 @@
     margin-top: 5%;
     margin-left: 4%;
 }
+.title_big{
+  font-weight: 600;
+  font-size: 22px;
+}
+.title_big_div{
+  margin-left: 5%;
+  margin-top: 5%;
+}
+.title_small_div{
+  margin-left: 5%;
+  margin-top: 4%;
+}
+.title_small{
+  font-weight: 300;
+  font-size: 12px;
+  color: white;
+}
+.later_button_div{
+    margin-top: 80%;
+    margin-left: 7%;
+}
+.later_button{
+        display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 45px;
+
+  border-radius: 15px;
+  background-color: rgba(13, 27, 224, 0.5);
+  size:15px;
+  border-color: rgba(13, 27, 224, 0.5);
+}

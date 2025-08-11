@@ -34,7 +34,7 @@ export default function Home() {
       </div>
 
       <div>
-        <MyButton className={styles.forget_button} href={'/main'}>
+        <MyButton className={styles.forget_button} href={'/reset-wallet'}>
           Forgot password
         </MyButton>
       </div>

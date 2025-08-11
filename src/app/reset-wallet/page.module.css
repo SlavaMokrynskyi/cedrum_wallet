@@ -1,0 +1,92 @@
+.body {
+  width: 360px;
+  height: 600px;
+  background-color: rgba(3, 10, 65, 1);
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+}
+.back_div{
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.back_button {
+  margin-right: 10px;
+  flex-shrink: 0;
+  z-index: 1; 
+}
+
+.back_button_icon {
+  width: 25px;
+  height: 25px;
+}
+.big_title_div{
+    margin-top: -5%;
+    margin-left: 60%;
+}
+.big_title{
+    font-size: 22px;
+    font-weight: 600;
+}
+.small_title_div{
+    margin-top: 5%;
+    margin-left: 5%;
+    
+}
+
+.small_title{
+    font-weight: 300;
+    font-size: 10px;
+}
+.rectangle {
+  margin-left: 5%;
+  margin-top: 5%;
+  height: 30px;
+  width: 320px;
+  border: 1px solid #8a8fbf; 
+  border-radius: 6px; 
+  padding: 6px 10px; 
+  color: #ffffff; 
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  background-color: transparent; 
+  display: inline-block; 
+}
+.global_title_div{
+    text-align: center;
+    margin-top: 5%;
+}
+.global_title{
+    font-weight: 600;
+    font-size: 14px;
+}
+.title_password_div{
+    margin-top: 50%;
+    margin-left: 6%;
+}
+.title_password_div2{
+    margin-top: 2%;
+    margin-left: 5%;
+}
+.input_div1{
+    margin-top: 2%;
+    margin-left: 6%;
+}
+.input_div2{
+     margin-top: 2%;
+    margin-left: 6%;
+}
+.create_button{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 40px;
+  margin-top: 5%;
+  margin-left: 7%;
+  border-radius: 15px;
+  background-color: rgba(13, 27, 224, 0.5);
+  size:15px;
+  border-color: rgba(13, 27, 224, 0.5);
+}

@@ -12,11 +12,7 @@ export default function Page() {
                 </div>
                 
                 
-                <div>
-                    <MyButton className={styles.back_button} href='/home'>
-                    <img src='/back.png' alt='icon' className={styles.icon_back_to_menu}/>
-                    </MyButton>
-                </div>
+                
                 <div className={styles.warning_icon_container}>
                     <img src='/warning.png' alt='icon' className={styles.warning_icon} />
                 </div>

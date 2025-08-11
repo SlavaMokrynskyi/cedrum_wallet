@@ -9,6 +9,11 @@ export default function page() {
     <div>
       <main>
         <div className={styles.body}>
+        <div className={styles.market_div}>
+          <MyButton className={styles.market} href='/NFT'>
+              <img src='/market.png' alt='icon' className={styles.market_icon} />
+          </MyButton>
+        </div>
         <div className={styles.menu_div}>
           <MyButton className={styles.menu} href='/settings'>
             <img src='/menu.png' alt='icon' className={styles.menu_icon}/>

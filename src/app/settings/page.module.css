@@ -134,3 +134,12 @@
 }
 
 
+.market_icon{
+  width: 30px;
+  height: 30px;
+}
+.market_div{
+  position: absolute;
+  left: 10%;
+  top: 4%;
+}

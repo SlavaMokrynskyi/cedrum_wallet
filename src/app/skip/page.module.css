@@ -45,7 +45,11 @@
   margin-left: 50px;
 }
 .warning_text {
-  font-size: 12px;
+  font-size: 14px;
+}
+.check_button_div{
+  position: absolute;
+  left: 6%;
 }
 .buttons {
   display: flex;

@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './page.module.css';
 import MyButton from '@/components/MyButton/MyButton';
+import CheckButton from '@/components/CheckButton/CheckButton';
 export default function Page() {
     return (
         <main>
@@ -20,10 +21,14 @@ export default function Page() {
                     <img src='/warning.png' alt='icon' className={styles.warning_icon} />
                 </div>
                 <div className={styles.warning}>
-                    <p className={styles.warning_text}>Skipping account security is not recommended. You will not be able to recover your account if you lose access.</p>
+                    <div className={styles.check_button_div}>
+            <CheckButton/>
+          </div >
+                    <p className={styles.warning_text}>If you lose this Secret Recovery Phrase, you won't be able to access this wallet.</p>
+                    
                 </div>
                 <div className={styles.buttons}>
-                    <MyButton className={styles.secure_now_button} href='/Recovery_Phrase'>
+                    <MyButton className={styles.secure_now_button} href='/save-recovery-phrase'>
                         Secure now
                     </MyButton>
                     <MyButton className={styles.skip_button} href='/'>

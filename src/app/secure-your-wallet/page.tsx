@@ -33,7 +33,7 @@ export default function page() {
           </MyButton>
         </div>
          <div className={styles.later_button_div}>
-          <MyButton className={styles.later_button} href='/'>
+          <MyButton className={styles.later_button} href='/skip'>
             <p >Reming me later </p>
           </MyButton>
         </div>

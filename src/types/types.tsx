@@ -2,6 +2,7 @@ export type MyButtonProps = {
   href: string;
   children: React.ReactNode;
   className: string; 
+  disabled?: boolean;
 };
 export interface CurrencyOption {
   code: string;
@@ -19,4 +20,6 @@ export type Balance = {
 export interface InputWithStateProps {
   placeholder?: string;
 }
-export type CheckButtonProps = {};
+export type CheckButtonProps = {
+
+};

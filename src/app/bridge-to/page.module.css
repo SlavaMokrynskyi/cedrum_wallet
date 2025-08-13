@@ -1,0 +1,89 @@
+.main {
+  width: 360px;
+  height: 600px;
+  background-color: rgba(3, 10, 65, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; 
+}
+.title {
+  font-size: 15px;
+  color: white;
+  margin-top: 30px;
+  font-weight: 400;
+}
+.back_button {
+  position: absolute;
+  top: 24px;
+  left: 30px;
+  border-radius: 15px;
+  margin-left: -10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+.back_button:active {
+  transform: scale(0.95);
+}
+.back_button_icon {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+.network_list {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  padding-left: 32px;
+}
+.network_button {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  gap: 16px;
+}
+.icon_box {
+  width: 32px;
+  height: 32px;
+  background: #d9d9d9;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+.network_icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+.network_name {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 400;
+  opacity: 0.8;
+}
+.selected {
+  transform: scale(1.08);
+  transition: transform 0.2s;
+  z-index: 1;
+}
+.selected .icon_box {
+  background: #50557a;
+}
+.selected .network_name {
+  opacity: 1;
+}

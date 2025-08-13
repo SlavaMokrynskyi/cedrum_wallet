@@ -23,6 +23,34 @@
   position: relative;
   text-align: center;
   font-size: 16px;
+  background: transparent;
+  color: #fff;
+  border-radius: 12px;
+  transition: background 0.2s, color 0.2s;
+}
+.select_amount:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #aaa;
+}
+.select_amount_active {
+  background: #fff;
+  color: #0d1be0;
+  border-radius: 12px;
+  max-width: 160px;
+  height: 10%;
+  box-shadow: 0 2px 8px rgba(13,27,224,0.08);
+  transition: background 0.2s, color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.select_amount_active:hover {
+  transform: scale(1.08);
+  box-shadow: 0 4px 16px rgba(13,27,224,0.15);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 .point_down {
   top: -18px;
@@ -43,7 +71,7 @@
 .rect {
   top: 150px;
   width: 360px;
-  height: 850px;
+  height: 900px;
   background-color: rgba(4, 12, 96, 1);
   display: flex;
   flex-direction: column;
@@ -60,6 +88,9 @@
   flex-direction: column;
   position: relative;
   border-radius: 5px;
+}
+.square_active {
+  top: -265px;
 }
 .tocken_name_1 {
   min-width: 40px;
@@ -124,7 +155,6 @@
   position: relative;
   border-radius: 5px;
   margin-left: -135px;
-  color: #bdbdbdc0;
   font-weight: 300;
   background-color: rgba(3, 10, 65, 1);
   border: none;

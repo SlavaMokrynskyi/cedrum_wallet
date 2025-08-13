@@ -1,0 +1,139 @@
+.main {
+  width: 360px;
+  height: 600px;
+  background-color: rgba(3, 10, 65, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; 
+}
+.title {
+  font-size: 15px;
+  color: white;
+  margin-top: 30px;
+  font-weight: 400;
+}
+.back_button {
+  position: absolute;
+  top: 24px;
+  left: 30px;
+  border-radius: 15px;
+  margin-left: -10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+.back_button:active {
+  transform: scale(0.95);
+}
+.back_button_icon {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+.input_wrapper {
+  position: relative;
+  width: 280px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.search {
+  width: 100%;
+  height: 35px;
+  padding-left: 30px;
+  border: 1.5px solid rgba(5, 14, 142, 0.4);
+  border-radius: 5px;
+  background-color: rgba(5, 14, 142, 0.4);
+  color: white;
+}
+.input_image {
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  pointer-events: none;
+}
+.token_list {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.token_button {
+  width: 95%;
+  min-height: 64px;
+  background: #070e4a;
+  border: none;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  position: relative;
+  margin: 0 auto;
+}
+
+.token_button_selected {
+  background: #0d1563;
+  transform: scale(1.03);
+  border-left: 4px solid #1a2aff;
+}
+
+.token_icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 16px;
+  object-fit: cover;
+  background: #d9d9d9;
+}
+
+.token_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  margin-left: -100px;
+}
+
+.token_name {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.token_subtitle {
+  color: #bfc4e2;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 2px;
+}
+
+.token_balance {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  min-width: 70px;
+}
+
+.token_balance_amount {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.token_balance_price {
+  color: #bfc4e2;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 2px;
+}

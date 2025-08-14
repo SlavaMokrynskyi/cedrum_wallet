@@ -13,55 +13,42 @@
 }
 .buttons_row {
   display: flex;
-  flex-direction: row;
-  justify-content: space;
+  justify-content: center; /* розміщує по центру */
   align-items: center;
+  gap: 50px; /* відстань між кнопками */
   position: absolute;
-  bottom: 60%;
+  bottom: 58%;
   width: 100%;
-  gap: 15%;
 }
 
-.swap_div{
-    display: flex; 
-    justify-content: center; 
-    background-color: rgba(5, 14, 142, 0.4);
-    width: 35px;
-    height: 35px;
-    margin-left: 8%;
-    border-radius: 5px;
-    
+.button_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
 }
 
-.button_title{
-    text-align: center;
-    font-weight: 500;
-    font-size: 10px;
-}
-.button_icon{
-    
-    width: 30px;
-    height: 30px;
+.icon_wrapper {
+  background-color: rgba(5, 14, 142, 0.4);
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.bridge_div{
-    display: flex;
-    justify-content: center; 
-    background-color: rgba(5, 14, 142, 0.4);
-    width: 35px;
-    height: 35px;
-    border-radius: 5px;
-    
+.icon_wrapper img {
+  width: 28px;
+  height: 28px;
 }
-.send_div{
-    display: flex; 
-    justify-content: center; 
-    background-color: rgba(5, 14, 142, 0.4);
-    width: 35px;
-    height: 35px;
 
-    border-radius: 5px;
+.button_title {
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
 }
+
 
 .market_icon{
   width: 30px;

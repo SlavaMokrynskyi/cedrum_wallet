@@ -11,7 +11,6 @@ export default function RecoveryPhrasesForm() {
     const [randomIds, setRandomIds] = useState<number[]>([])
     const [isLoading, setIsLoading] = useState(true)
 
-    // Генеруємо 3 унікальні рандомні цифри від 1 до 12 тільки на клієнті
     useEffect(() => {
         const generateRandomIds = () => {
             const numbers: number[] = []
@@ -29,13 +28,11 @@ export default function RecoveryPhrasesForm() {
     }, [])
 
     const handleInputChange = (id: number, value: string) => {
-        // Оновлюємо значення інпуту
         setInputValues(prev => ({
             ...prev,
             [id]: value
         }))
-        
-        // Очищаємо повідомлення про помилку при зміні введення
+
         if (errorMessage) {
             setErrorMessage('')
         }
@@ -43,8 +40,7 @@ export default function RecoveryPhrasesForm() {
 
     const handlerOnSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault()
-        
-        // Перевіряємо тільки ті фрази, які користувач має ввести
+
         const allValid = randomIds.every(id => {
             const phrase = recoveryPhrases.find(p => p.id === id)
             if (!phrase) return false
@@ -56,7 +52,7 @@ export default function RecoveryPhrasesForm() {
         if (allValid) {
             console.log('Всі фрази введені правильно!')
             setErrorMessage('')
-            router.push('/home')
+            router.push('/unlock-page')
         } else {
             setErrorMessage('Some phrases are entered incorrectly. Please check the accuracy of your input.')
         }
@@ -66,7 +62,6 @@ export default function RecoveryPhrasesForm() {
         setErrorMessage('')
     }
 
-    // Показуємо завантаження до генерації randomIds
     if (isLoading) {
         return (
             <div className={styles.container}>

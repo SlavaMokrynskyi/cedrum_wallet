@@ -49,3 +49,7 @@
 .button:hover {
   background-color: rgba(5, 14, 142, 0.4);
 }
+.daily_growth{
+  margin-top: 10px;
+  font-size: medium;
+}

@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './page.module.css';
 import BalanceComponent from '@/components/BalanceComponent/BalanceComponent';
 import MyButton from '@/components/MyButton/MyButton';
+import NFTCard from '@/components/NFTCard/NFTCard';
 
 export default function Page() {
   return (
@@ -29,14 +30,10 @@ export default function Page() {
           <img src="/serch.png" alt="icon" className={styles.input_image} />
           <input type="text" placeholder="Search" className={styles.search} />
         </div>
-        <div className={styles.cardContainer}>
-          <MyButton href='/NFT-component' className={styles.card}>
-            <div className={styles.cardImage}></div>
-            <p className={styles.cardTitle}>7777777 #7777</p>
-            <p className={styles.cardPrice}>0,000 USD</p>
-          </MyButton>
+        
+        <div className={styles.nft_container}>
+          <NFTCard count={8}/>
         </div>
-
       </div>
     </main>
   )

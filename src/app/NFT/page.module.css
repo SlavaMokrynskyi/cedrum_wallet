@@ -72,41 +72,28 @@
   pointer-events: none;
 }
 
-/* Картка */
-.cardContainer {
-  display: flex;
-
-  padding-left: 1px;
+.nft_container {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px 0;
+  margin: 0 20px;
 }
 
-.card {
-  width: 150px;
-  background-color: none;
-  border-radius: 10px;
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: Arial, sans-serif;
-  color: white;
-
+.nft_container::-webkit-scrollbar {
+  width: 6px;
 }
 
-.cardImage {
-  width: 100px;
-  height: 100px;
-  background-color: #d3d3d3;
-  border-radius: 8px;
+.nft_container::-webkit-scrollbar-track {
+  background: rgba(5, 14, 142, 0.1);
+  border-radius: 3px;
 }
 
-.cardTitle {
-  margin-top: 12px;
-  font-size: 12px;
-  font-weight: 500;
+.nft_container::-webkit-scrollbar-thumb {
+  background: rgba(5, 14, 142, 0.6);
+  border-radius: 3px;
 }
 
-.cardPrice {
-  margin-top: 8px;
-  font-size: 14px;
-  color: #c9c9c9;
+.nft_container::-webkit-scrollbar-thumb:hover {
+  background: rgba(5, 14, 142, 0.8);
 }

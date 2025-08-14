@@ -45,12 +45,11 @@
 }
 
 .bridge_div{
-    display: flex; 
+    display: flex;
     justify-content: center; 
     background-color: rgba(5, 14, 142, 0.4);
     width: 35px;
     height: 35px;
-
     border-radius: 5px;
     
 }

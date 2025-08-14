@@ -17,8 +17,8 @@ export default function page() {
           <div className={styles.buttons_row}>
             <div className={styles.swap_div}>
               <MyButton className={styles.swap} href='/swap-page'>
-              <img src='/swap.png' className={styles.button_icon}/>
-              <p className={styles.button_title}>Swap</p>
+                <img src='/swap.png' className={styles.button_icon}/>
+                <p className={styles.button_title}>Swap</p>
               </MyButton>
             </div>
             <div className={styles.bridge_div}>

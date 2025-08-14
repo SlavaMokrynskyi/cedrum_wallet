@@ -4,34 +4,27 @@ import { useState } from 'react'
 import styles from './HomeFooter.module.css'
 import { tokens } from './tokens'
 import TokenItem from '../TokenItem/TokeItem'
+import NFTCard from '../NFTCard/NFTCard'
 
 export default function HomeFooter() {
-    const[isToken,setIsToken] = useState<boolean>(true)
-    const[isActivity,setIsActivity] = useState<boolean>(false)
-    const[isNFT,setIsNFT] = useState<boolean>(false)
+    const[btnInfo,setBtnInfo] = useState<string>('tokens')
 
-    if(isToken){
+    if(btnInfo == 'tokens'){
         return(
         <div className={styles.body}>
             <div className={styles.buttons_container}>
                 <button className={styles.active} onClick={() => {
-                    setIsToken(true)
-                    setIsActivity(false)
-                    setIsNFT(false)
+                    setBtnInfo('tokens')
                 }}>
                     Tokens
                 </button>
                 <button onClick={() => {
-                    setIsToken(false)
-                    setIsActivity(true)
-                    setIsNFT(false)
+                    setBtnInfo('activity')
                 }}>
                     Activity
                 </button>
                 <button onClick={() => {
-                    setIsToken(false)
-                    setIsActivity(false)
-                    setIsNFT(true)
+                    setBtnInfo('nft')
                 }}>
                     NFTs
                 </button>
@@ -47,28 +40,22 @@ export default function HomeFooter() {
         )
     }
 
-    else if(isActivity){
+    else if(btnInfo == 'activity'){
         return(
         <div className={styles.body}>
             <div className={styles.buttons_container}>
                 <button  onClick={() => {
-                    setIsToken(true)
-                    setIsActivity(false)
-                    setIsNFT(false)
+                    setBtnInfo('tokens')
                 }}>
                     Tokens
                 </button>
                 <button className={styles.active} onClick={() => {
-                    setIsToken(false)
-                    setIsActivity(true)
-                    setIsNFT(false)
+                    setBtnInfo('activity')
                 }}>
                     Activity
                 </button>
                 <button onClick={() => {
-                    setIsToken(false)
-                    setIsActivity(false)
-                    setIsNFT(true)
+                    setBtnInfo('nft')
                 }}>
                     NFTs
                 </button>
@@ -80,34 +67,37 @@ export default function HomeFooter() {
         )
     }
 
-    else if(isNFT){
+    else if(btnInfo == 'nft'){
         return(
         <div className={styles.body}>
             <div className={styles.buttons_container}>
                 <button onClick={() => {
-                    setIsToken(true)
-                    setIsActivity(false)
-                    setIsNFT(false)
+                    setBtnInfo('tokens')
                 }}>
                     Tokens
                 </button>
                 <button onClick={() => {
-                    setIsToken(false)
-                    setIsActivity(true)
-                    setIsNFT(false)
+                    setBtnInfo('activity')
                 }}>
                     Activity
                 </button>
                 <button className={styles.active} onClick={() => {
-                    setIsToken(false)
-                    setIsActivity(false)
-                    setIsNFT(true)
+                    setBtnInfo('nft')
                 }}>
                     NFTs
                 </button>
             </div>
+            <div className={styles.nft_container}>
+                <NFTCard count = {6}></NFTCard>
+            </div>
         </div>
         )
     }
-
+    else {
+        return(
+            <div className={styles.body}>
+                <p>Something went wrong</p>
+            </div>
+        )
+    }
 }

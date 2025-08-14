@@ -7,38 +7,12 @@
   align-items: center;
   position: relative;
 }
-.menu_div{
-  position: absolute;
-  right: 10%;
-  top: 4%;
-}
-.menu_icon{
-  width: 30px;
-  height: 30px;
-}
-.line_div{
-  padding: 0px;
-  margin: 0px;
-  margin-bottom: 50px;
-}
-.line {
-  width: 360px;
-  height: 1px;
-  background-color: rgba(230, 227, 248, 0.6);
-  border: none;
-  margin: 0px ;
-  padding: 0px;
-  position: absolute;
-  left: 0%;
-  top: 12%
-}
 .title_setting {
-  margin-top: 50px;
+  margin-top: 35px;
   font-size: 14px;
   font-weight: 500;
   color: white;
 }
-
 .icon_back_to_menu{
   width: 35px;
   height: 30px;
@@ -48,8 +22,6 @@
   top:15%;
   left: 88%;
 }
-
-
 
 .input_wrapper {
   position: relative;
@@ -75,8 +47,6 @@
   height: 16px;
   pointer-events: none;
 }
-
-
 
 .global_button {
   display: flex;
@@ -114,8 +84,6 @@
   height: 20px;
 }
 
-
-
 .button_extensions_div {
   display: flex;
   align-items: center;
@@ -132,8 +100,6 @@
   color: white;
   margin: 0;
 }
-
-
 .market_icon{
   width: 30px;
   height: 30px;

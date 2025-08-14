@@ -1,0 +1,248 @@
+/* Стилі для TopBar */
+.body {
+  width: 360px;
+  height: 62px;
+  background-color: rgba(3, 10, 65, 1);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden; /* Запобігає виходу елементів за межі */
+}
+
+.top_buttons_container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.line_div {
+  padding: 0px;
+  margin: 0px;
+}
+
+.line {
+  width: 360px;
+  height: 1px;
+  background-color: rgba(230, 227, 248, 0.6);
+  border: none;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  left: 0%;
+  top: 61px; 
+}
+
+.menu_div {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.menu_icon {
+  width: 30px;
+  height: 30px;
+  transition: all 0.2s ease;
+}
+
+.menu{
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.menu:hover .menu_icon {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.balance {
+  position: absolute;
+  top: 85px; /* Переміщуємо нижче лінії з відступом */
+}
+
+.buttons_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Змінено з space на space-between */
+  align-items: center;
+  position: absolute;
+  bottom: 60%;
+  width: 100%;
+  padding: 0 20px; /* Додано відступи з боків */
+  box-sizing: border-box; /* Включає padding у загальну ширину */
+}
+
+.swap_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(5, 14, 142, 0.4);
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  flex-shrink: 0; /* Запобігає стисканню */
+}
+
+.button_title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 10px;
+}
+
+.button_icon {
+  width: 30px;
+  height: 30px;
+}
+
+.bridge_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(5, 14, 142, 0.4);
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  flex-shrink: 0; /* Запобігає стисканню */
+}
+
+.send_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(5, 14, 142, 0.4);
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+
+.market_icon {
+  width: 30px;
+  height: 30px;
+  transition: all 0.2s ease;
+}
+
+.market_div {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.market_div:hover .market_icon {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+/* Стилі для кнопки акаунт */
+.account_div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.account_info_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 8px 12px;
+  border-radius: 12px;
+  background: transparent;
+  border: none;
+  transition: all 0.2s ease;
+  min-width: 200px;
+}
+
+.account_info_container:hover {
+  background: transparent;
+  border-color: transparent;
+}
+
+.account_left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.account_avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  flex-shrink: 0;
+}
+
+.account_text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.account_name {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.address_container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.account_address {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 11px;
+  margin: 0;
+  font-family: monospace;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.account_address:hover {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: underline;
+}
+
+.copy_button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 2px;
+  color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.copy_button:hover {
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.account_arrow {
+  color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,26 @@
+.token_card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 320px;
+    height: 35px;
+    margin: 10px
+}
+.token_info{
+    display: flex;
+    padding: 5px;
+    align-items: center;
+}
+.token_growth{
+    color: blue;
+}
+.token_avatar{
+    margin: 0 10px 0 0;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.token_price{
+    text-align: right;
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './page.module.css';
 import MyButton from '@/components/MyButton/MyButton';
+import RecoveryPhrasesDisplay from '@/components/RecoveryPhrasesForm/RecoveryPhrasesDisplay';
 
 
 export default function page() {
@@ -24,11 +25,7 @@ export default function page() {
         <div className={styles.title_small_div}>
           <p className={styles.title_small}>Don't share it with anyone, ever.</p>
         </div>
-        <div className={styles.later_button_div}>
-          <MyButton className={styles.later_button} href='/confirm-recovery-phrase'>
-            <p >Continue</p>
-          </MyButton>
-        </div>
+        <RecoveryPhrasesDisplay />
         </div>
     </main>
   )

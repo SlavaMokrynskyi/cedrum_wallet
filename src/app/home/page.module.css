@@ -4,33 +4,8 @@
   background-color: rgba(3, 10, 65, 1);
   display: flex;
   flex-direction: column;
-
   position: relative;
-  
-}
-.line_div{
-  padding: 0px;
-  margin: 0px;
-}
-.line {
-  width: 360px;
-  height: 1px;
-  background-color: rgba(230, 227, 248, 0.6);
-  border: none;
-  margin: 0px ;
-  padding: 0px;
-  position: absolute;
-  left: 0%;
-  top: 12%
-}
-.menu_div{
-  position: absolute;
-  right: 10%;
-  top: 4%;
-}
-.menu_icon{
-  width: 30px;
-  height: 30px;
+  overflow: hidden;
 }
 .balance{
     position: absolute;

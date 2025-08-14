@@ -30,7 +30,7 @@ export default function BalanceComponent() {
 
       <div className={styles.balanceRow}>
         <p className={styles.amount}>
-          {hidden ? '***' : balance.amount.toFixed(3)} {balance.currency}
+          {hidden ? '*******' : balance.amount.toFixed(3)} {balance.currency}
         </p>
 
         <button className={styles.button} onClick={toggleVisibility}>

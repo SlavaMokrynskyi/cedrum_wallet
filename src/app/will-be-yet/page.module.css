@@ -1,11 +1,11 @@
 .body {
-  width: 360px;
-  height: 600px;
-  background-color: rgba(3, 10, 65, 1);
-  display: flex;
-  flex-direction: column;
-
-  position: relative;
+    width: 360px;
+    background-color: rgba(3, 10, 65, 1);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    height: 538px;
 }
 .title{
     text-align: center;
@@ -14,41 +14,18 @@
     top:50%;
     left:20%;
 }
-.menu_div{
-  position: absolute;
-  right: 10%;
-  top: 4%;
-}
-.menu_icon{
-  width: 30px;
-  height: 30px;
-}
-.line_div{
-  padding: 0px;
-  margin: 0px;
-}
-.line {
-  width: 360px;
-  height: 1px;
-  background-color: rgba(230, 227, 248, 0.6);
-  border: none;
-  margin: 0px ;
-  padding: 0px;
-  position: absolute;
-  left: 0%;
-  top: 12%
-}
+
 .general_title_row {
   position: relative;
   display: flex;
   align-items: center;
-  margin-top: 100px;
   padding-left: 20px; 
   height: 25px; 
 }
 
 .back_button {
-  margin-right: 10px;
+  position: absolute;
+  top: -220px;
   flex-shrink: 0;
   z-index: 1; 
 }

@@ -1,0 +1,142 @@
+/* Стилі для ChangeAccountModal */
+
+.modal {
+  position: fixed;
+  bottom: 31%;
+  left: 0;
+  width: 360px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 9999;
+}
+
+.modal_active {
+  position: fixed;
+  bottom: 31%;
+  left: 0;
+  width: 360px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+  z-index: 9999;
+}
+
+.modal_content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 250px;
+  background-color: rgba(3, 10, 65, 1);
+  border-radius: 20px 20px 0 0;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  box-shadow: 0 -40px 20px rgba(0, 0, 0, 0.15);
+}
+
+.modal_active .modal_content {
+  transform: translateY(0);
+}
+
+.modal_header {
+  padding: 20px 24px;
+  border-bottom: 1px solid rgba(230, 227, 248, 0.6);
+  background-color: rgba(3, 10, 65, 1);
+}
+
+.modal_header h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ededed;
+}
+
+.modal_body {
+  flex: 1;
+  padding: 16px 24px;
+  overflow-y: auto;
+  background-color: rgba(3, 10, 65, 1);
+}
+
+.account_item {
+  display: flex;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(230, 227, 248, 0.3);
+}
+
+.account_item:last-child {
+  border-bottom: none;
+}
+
+.account_avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-right: 16px;
+}
+
+.account_info {
+  flex: 1;
+}
+
+.account_info h5 {
+  margin: 0 0 4px 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ededed;
+}
+
+.account_info p {
+  margin: 0;
+  font-size: 14px;
+  color: rgba(230, 227, 248, 0.8);
+}
+
+.account_amount {
+  text-align: right;
+}
+
+.account_amount p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ededed;
+}
+
+.modal_footer {
+  padding: 20px 24px;
+  border-top: 1px solid rgba(230, 227, 248, 0.6);
+  background-color: rgba(3, 10, 65, 1);
+}
+
+.modal_footer_button {
+  width: 100%;
+  padding: 16px;
+  background-color: rgba(5, 14, 142, 0.8);
+  color: #ededed;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.modal_footer_button:hover {
+  background-color: rgba(5, 14, 142, 1);
+}
+
+.modal_footer_button p {
+  margin: 0;
+}

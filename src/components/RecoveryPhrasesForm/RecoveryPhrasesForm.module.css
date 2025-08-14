@@ -1,0 +1,149 @@
+.container {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: fit-content;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+  gap: 10px;
+  max-width: 600px;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  min-height: 50px;
+}
+
+.inputWrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.inputNumber {
+  position: absolute;
+  left: 15px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.input {
+  width: 100%;
+  height: 38px;
+  background-color: transparent;
+  border: 1px solid #4a4a6a;
+  border-radius: 19px;
+  padding: 0 15px 0 30px;
+  color: #ffffff;
+  font-size: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  font-family: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  background: transparent;
+}
+
+.input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 11px;
+  text-align: center;
+}
+
+.input:focus {
+  outline: none;
+  border: 1px solid #4a4a6a;
+}
+
+.input:not(:placeholder-shown) {
+  border-color: #4a4a6a;
+}
+
+.phraseText {
+  width: 100%;
+  height: 38px;
+  color: #ffffff;
+  font-size: 12px;
+  text-align: center;
+  margin: 0;
+  padding: 0 15px 0 30px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 19px;
+  border: 1px solid #4a4a6a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.submitButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / -1;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: rgba(13, 27, 224, 0.5);
+    color: #ffffff;
+    border: none;
+    border-radius: 22px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.submitButton:active {
+    transform: translateY(0);
+}
+
+.errorMessage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #ff6b6b;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px solid #ff6b6b;
+  font-family: inherit;
+  font-size: 14px;
+  z-index: 1000;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  min-width: 300px;
+  max-width: 400px;
+}
+
+.errorOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}

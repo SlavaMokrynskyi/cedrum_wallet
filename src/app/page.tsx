@@ -3,9 +3,6 @@ import React from 'react';
 import MyButton from '../components/MyButton/MyButton'; 
 
 export default function Home() {
-  
-
-
   return (
     <main className={styles.main}>
       <div>

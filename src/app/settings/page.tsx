@@ -2,59 +2,42 @@
 import React from 'react';
 import styles from './page.module.css';
 import MyButton from '@/components/MyButton/MyButton';
+import TopBar from '@/components/TopBar/TopBar';
 
 export default function Page() {
   return (
     <main>
       <div className={styles.body}>
-        <div className={styles.market_div}>
-          <MyButton className={styles.market} href='/NFT'>
-              <img src='/market.png' alt='icon' className={styles.market_icon} />
+        <TopBar/>
+        <div>
+          <MyButton className={styles.back_button} href='/home'>
+            <img src='/back.png' alt='icon' className={styles.icon_back_to_menu}/>
           </MyButton>
         </div>
-        <div className={styles.menu_div}>
-          <MyButton className={styles.menu} href='/settings'>
-            <img src='/menu.png' alt='icon' className={styles.menu_icon}/>
-          </MyButton>
-        </div>
-        <div className={styles.line_div}>
-        <hr className={styles.line} />
-      </div>
-      <div>
-        <MyButton className={styles.back_button} href='/home'>
-          <img src='/back.png' alt='icon' className={styles.icon_back_to_menu}/>
-          
-        </MyButton>
-      </div>
         <div>
           <h1 className={styles.title_setting}>Settings</h1>
-        </div>
-      
+        </div>  
         <div className={styles.input_wrapper}>
           <img src="/serch.png" alt="icon" className={styles.input_image} />
           <input type="text" placeholder="Search" className={styles.search} />
         </div>
-
         <div>
-            <MyButton className={styles.global_button} href='/general-settings'>
-              <img src="/settings.png" alt="icon" className={styles.icon_setting} />
-              <p className={styles.setting_button_title}>General</p>
-              <img src="/back_button_reversed.png" alt="icon" className={styles.icon_back} />
-            </MyButton>
-
+           <MyButton className={styles.global_button} href='/general-settings'>
+            <img src="/settings.png" alt="icon" className={styles.icon_setting} />
+            <p className={styles.setting_button_title}>General</p>
+            <img src="/back_button_reversed.png" alt="icon" className={styles.icon_back} />
+          </MyButton>
         </div>
-
         <div>
         <MyButton className={styles.global_button} href='/will-be-yet'>
-            <div className={styles.button_extensions_div}>
-              <img src="/extensions.png" alt="icon" className={styles.extensions_icon} />
-              <p className={styles.setting_button_title}>Extended</p>
-              <img src="/back_button_reversed.png" alt="icon"  className={styles.icon_back}/>
-            </div>
+          <div className={styles.button_extensions_div}>
+            <img src="/extensions.png" alt="icon" className={styles.extensions_icon} />
+            <p className={styles.setting_button_title}>Extended</p>
+            <img src="/back_button_reversed.png" alt="icon"  className={styles.icon_back}/>
+          </div>
         </MyButton>
-
       </div>
-      <div>
+        <div>
           <MyButton className={styles.global_button} href='/backup-and-sync'>
             <div className={styles.button_extensions_div}>
               <img src='/backup_and_sync.png' alt='icon' className={styles.extensions_icon}/>
@@ -62,34 +45,34 @@ export default function Page() {
               <img src='/back_button_reversed.png' alt='icon' className={styles.icon_back}/>
             </div>
           </MyButton>
-      </div>
-      <div>
-        <MyButton className={styles.global_button} href='/will-be-yet'>
-          <div className={styles.button_extensions_div}>
-            <img src='/contacks.png' alt='icon'className={styles.extensions_icon}/>
-            <p className={styles.setting_button_title}>Contacts</p>
-            <img src='back_button_reversed.png' alt='icon' className={styles.icon_back}/>
-          </div>
-        </MyButton>
-      </div>
-      <div>
-        <MyButton className={styles.global_button} href='/will-be-yet'>
-          <div className={styles.button_extensions_div}>
-            <img  src='/notifications.png' alt='icons' className={styles.extensions_icon}/>
-            <p className={styles.setting_button_title}>Notifications</p>
-            <img src='/back_button_reversed.png' alt='icon' className={styles.icon_back} />
-          </div>
-        </MyButton>
-      </div>
-      <div>
-        <MyButton className={styles.global_button} href='/will-be-yet'>
-          <div className={styles.button_extensions_div}>
-            <img src='/security.png' alt='icon' className={styles.extensions_icon}/>
-            <p className={styles.setting_button_title}>Security and privacy</p>
-            <img src='/back_button_reversed.png' className={styles.icon_back} alt='icon'/>
-          </div>
-        </MyButton>
-      </div>
+        </div>
+        <div>
+          <MyButton className={styles.global_button} href='/will-be-yet'>
+            <div className={styles.button_extensions_div}>
+              <img src='/contacks.png' alt='icon'className={styles.extensions_icon}/>
+              <p className={styles.setting_button_title}>Contacts</p>
+              <img src='back_button_reversed.png' alt='icon' className={styles.icon_back}/>
+            </div>
+          </MyButton>
+        </div>
+        <div>
+          <MyButton className={styles.global_button} href='/will-be-yet'>
+            <div className={styles.button_extensions_div}>
+              <img  src='/notifications.png' alt='icons' className={styles.extensions_icon}/>
+              <p className={styles.setting_button_title}>Notifications</p>
+              <img src='/back_button_reversed.png' alt='icon' className={styles.icon_back} />
+            </div>
+          </MyButton>
+        </div>
+        <div>
+          <MyButton className={styles.global_button} href='/will-be-yet'>
+            <div className={styles.button_extensions_div}>
+              <img src='/security.png' alt='icon' className={styles.extensions_icon}/>
+              <p className={styles.setting_button_title}>Security and privacy</p>
+              <img src='/back_button_reversed.png' className={styles.icon_back} alt='icon'/>
+            </div>
+          </MyButton>
+        </div>
       </div>
     </main>
   );

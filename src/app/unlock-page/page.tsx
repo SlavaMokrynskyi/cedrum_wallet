@@ -1,6 +1,6 @@
 import React from 'react'
 import MyButton from '@/components/MyButton/MyButton'
-import styles from './unlockpage.module.css'
+import styles from './page.module.css'
 
 export default function Unlockpage() {
   return (

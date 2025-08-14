@@ -1,0 +1,100 @@
+.account_div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .account_info_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 8px 12px;
+    border-radius: 12px;
+    background: transparent;
+    border: none;
+    transition: all 0.2s ease;
+    min-width: 200px;
+  }
+  
+  .account_info_container:hover {
+    background: transparent;
+    border-color: transparent;
+  }
+  
+  .account_left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .account_avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    flex-shrink: 0;
+  }
+  
+  .account_text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  .account_name {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    line-height: 1;
+    white-space: nowrap;
+  }
+  
+  .address_container {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .account_address {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 11px;
+    margin: 0;
+    font-family: monospace;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .account_address:hover {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: underline;
+  }
+  
+  .copy_button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 2px;
+    color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+  }
+  
+  .copy_button:hover {
+    color: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .account_arrow {
+    color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

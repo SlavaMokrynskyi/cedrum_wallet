@@ -2,6 +2,7 @@ import { useRouter } from 'next/navigation';
 import styles from './send.module.css';
 import React from 'react';
 import MyButton from '@/components/MyButton/MyButton';
+import Account_btn from '@/components/Account_btn/Account_btn';
 
 export default function Home() {
   return (
@@ -11,6 +12,9 @@ export default function Home() {
       </div>
       <div className={styles.From}>
         <h1 className={styles.From}>From</h1>
+      </div>
+      <div className={styles.account}>
+        <Account_btn/>
       </div>
       <div className={styles.To}>
         <h1 className={styles.To}>To</h1>

@@ -61,32 +61,3 @@
     font-weight: 600;
     font-size: 14px;
 }
-.title_password_div{
-    margin-top: 50%;
-    margin-left: 6%;
-}
-.title_password_div2{
-    margin-top: 2%;
-    margin-left: 5%;
-}
-.input_div1{
-    margin-top: 2%;
-    margin-left: 6%;
-}
-.input_div2{
-     margin-top: 2%;
-    margin-left: 6%;
-}
-.create_button{
-    display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 300px;
-  height: 40px;
-  margin-top: 5%;
-  margin-left: 7%;
-  border-radius: 15px;
-  background-color: rgba(13, 27, 224, 0.5);
-  size:15px;
-  border-color: rgba(13, 27, 224, 0.5);
-}

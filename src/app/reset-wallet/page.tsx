@@ -3,6 +3,7 @@ import styles from './page.module.css';
 import MyButton from '@/components/MyButton/MyButton';
 import InputWithState from '@/components/InputWithState/InputWithState';
 
+import RecoveryPhrasesInput from '@/components/RecoveryPhrasesInput/RecoveryPhrasesInput';
 
 export default function page() {
   return (
@@ -29,23 +30,8 @@ export default function page() {
         <div className={styles.global_title_div}>
         <p className={styles.global_title}>Secret Recovery Phraset</p>
         </div>
-        <div className={styles.title_password_div}>
-            <p className={styles.title_password}>Create new password</p>
-        </div>
-        <div className={styles.input_div1}>
-              <InputWithState placeholder="Password"   />
-        </div>
-        <div className={styles.title_password_div2}>
-          <p className={styles.title_password}>Confirm password</p>
-        </div>
-        <div className={styles.input_div2}>
-              <InputWithState placeholder="Password"  />
-        </div>
-        <div>
-          <MyButton className={styles.create_button} href='/'>
-            <p>Restore </p>
-          </MyButton>
-        </div>
+        <RecoveryPhrasesInput></RecoveryPhrasesInput>
+        
         </div>
     </main>
   )
